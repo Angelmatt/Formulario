@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario de registro</h1>
+    <p id="description">Complete los campos especificados a continuacion:</p>
+    <div>
+        <form id="survey-form">
+            <div class="Font-class">
+         <label id="color-font";>Nombre</label><br>
+         <input type="text"; id="name"; class="form-control"; placeholder= "ingrese su nombre" required></input>
+         </div><br>
+         <div class="Font-class">
+         <label id="color-font";>Email</label><br>
+         <input type="email"; id="email"; class="form-control"; placeholder= "ingrse su email" required></input>
+         </div><br>
+         <div class="Font-class">
+         <label id="color-font";>Edad</label><br>
+         <input type="number"; id="age"; class="form-control"; min="18" min="90"; placeholder= "ingrese su edad" required></input>
+         </div>
+         <div class="Font-class">
+             <p id="color-font">Estudios cursados</p>
+             <select class="form-control"; required >
+                 <option disabled selected value>Seleccione una opcion</option>
+                 <option value="Secundario">Secundario</option>
+                 <option value="Terciario">Terciario</option>
+                 <option value="Universitario">Universitario</option>
+                 <option value="Posgrado">Posgrado</option>
+                 <option value="Tecnicatura">Tecnicatura</option>
+                 <option value="Otro">Otro</option>
+             </select>
+         </div>
+         <div class="Font-class">
+             <p id="color-font">¿Como conocio nuestra pagina?</p>
+             <label id="color-font">
+                 <input name="user-know"; type="radio";>Publicidad en tv.
+             </label><br>
+             <label id="color-font">
+                <input name="user-know"; type="radio";>Redes sociales.
+            </label><br>
+            <label id="color-font">
+                <input name="user-know"; type="radio";>Recomendacion de terceros.
+            </label><br>
+            <label id="color-font">
+                <input name="user-know"; type="radio";>Llegue de casualidad.
+            </label>
+         </div>
+         <div class="Font-class">
+             <p id="color-font">Seleccione lo que coincideres importante para usted:</p>
+             <label id="color-font">
+                <input name="user-check"; value="Informatica"; type="checkbox";>Informatica.
+            </label><br>
+            <label id="color-font">
+                <input name="user-check"; value="Educacion"; type="checkbox";>Educacion.
+            </label><br>
+                <label id="color-font">
+                    <input name="user-check"; value="ocio"; type="checkbox";>ocio.
+                </label><br>
+                <label id="color-font">
+                    <input name="user-check"; value="Arte"; type="checkbox";>Arte.
+                </label><br>
+                <label id="color-font">
+                    <input name="user-check"; value="Finanzas"; type="checkbox";>Finanzas.
+                </label>
+         </div>
+         <div class="Font-class">
+             <p id="color-font">Dejanos Algun comentario o sugerencia</p>
+             <textarea id="coments"; name="comment"; placeholder="Ingrese aqui el texto..."></textarea>
+         </div>
+         <div class="Font-class">
+            <button type="submit"; id="submit"; class="submit-button">
+                Submit
+              </button>
+         </div>
+    </form>
+    </div>
+</body>
+</html>
